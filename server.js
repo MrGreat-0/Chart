@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(__dirname));
 
 // Your Zoho access token
-const ACCESS_TOKEN = "1000.6"; // Replace with your current valid token
+const ACCESS_TOKEN = process.env.ZOHO_ACCESS_TOKEN; // Replace with your current valid token
 
 // API route to fetch leads from Zoho
 app.get("/leads", async (req, res) => {
@@ -36,4 +36,4 @@ app.get("/", (req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => console.log("Server running on http://localhost:3000"));
+app.listen(process.env.PORT || 3000, () => console.log("Server running on http://localhost:3000"));

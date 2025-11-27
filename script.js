@@ -1,5 +1,5 @@
 async function loadChart() {
-    const response = await fetch("http://localhost:3000/leads");
+    const response = await fetch("/leads");
     const json = await response.json();
 
     const leads = json.data;
