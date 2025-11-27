@@ -1,0 +1,14 @@
+{
+    "platform": "CRM",
+    "name": "Lead Status Pie Chart",
+    "version": "1.0",
+    "description": "Displays Lead Status chart",
+    "type": "homePage",
+    
+    "index": {
+      "file": "index.html",
+      "icon": "icon.png",
+      "height": "auto"
+    }
+  }
+  
